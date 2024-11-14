@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบทดสอบ JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>แบบทดสอบ JavaScript</h1>
+            <p>ตอบคำถามเกี่ยวกับ JavaScript เพื่อทดสอบความรู้ของคุณ!</p>
+        </div>
+        
+        <form id="quiz-form">
+            <div class="question">
+                <label for="q1">1. JavaScript มีความสำคัญอย่างไรใน Front-End Development?</label>
+                <textarea id="q1" name="q1"></textarea>
+            </div>
+
+            <div class="question">
+                <label for="q2">2. ตัวแปร let และ const ต่างจาก var อย่างไร?</label>
+                <textarea id="q2" name="q2"></textarea>
+            </div>
+
+            <div class="question">
+                <label for="q3">3. ประเภทข้อมูลใน JavaScript มีอะไรบ้าง?</label>
+                <textarea id="q3" name="q3"></textarea>
+            </div>
+
+            <div class="question">
+                <label for="q4">4. การใช้ console.log() มีประโยชน์อย่างไร?</label>
+                <textarea id="q4" name="q4"></textarea>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">ตรวจสอบคำตอบ</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
